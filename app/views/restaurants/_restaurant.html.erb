@@ -1,0 +1,24 @@
+<div class="card shadow-sm">
+  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <title>Placeholder</title>
+    <rect width="100%" height="100%" fill="#55595c"></rect>
+    <text x="40%" y="50%" fill="#eceeef" dy=".2em">Thumbnail</text>
+  </svg>
+
+  <div class="card-body">
+    <p class="card-text">
+      <strong><h1><%= restaurant.name %></h1>
+
+      <span><u><%= restaurant.location %></u></span></strong><br /><br>
+
+      <strong><%=link_to "Menu Item",restaurant_menus_path(restaurant),class:"btn btn-info"%></strong>
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-sm btn-outline-secondary" href="">View</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" href="">Edit</button>
+      </div>
+      <small class="text-muted"><%#=restaurant.time%></small>
+    </div>
+  </div>
+</div>

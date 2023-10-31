@@ -1,0 +1,9 @@
+<p  class="text-center">Welcome to <%=@restaurant.name%></p>
+<% @menus.each do |menu| %>
+<div class="card-body bg-color:light-yellow ">
+    <%= render menu %>
+    <p>
+      <%= link_to "Show this restaurant", menu %>
+    </p>
+</div>
+  <% end %>
